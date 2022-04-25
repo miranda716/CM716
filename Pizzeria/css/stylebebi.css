@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------- GENERAL -------------*/   
+body{
+     background-image: url("img/fondo");
+     background-repeat: repeat-y;
+ }
+
+ #grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr auto;
+    height: 100%;
+
+}
+
+/*----------- HEADER --------------*/
+ #header{
+     grid-column: 1/4;
+ }
+
+ .title{
+ /*font-family: 'Redressed', cursive;*/
+ font-family: 'Italianno', cursive;
+ font-size: 60px;
+ color:#fff;
+ align-self: end;
+ justify-self: start;
+ grid-column: 2;
+ }
+
+ header{
+     display: grid;
+     grid-template-columns: 10% 80% 10%;
+     grid-template-rows: 70% 30%;
+     background-color:    #e22091  ;
+     margin-bottom: 20px;
+     box-shadow: 0 0 5px 5px #515a5a;
+ }
+
+ header nav{
+     display: inline-block;
+     grid-row: 2;
+     grid-column: 2;
+     align-self: end;
+     justify-self: right;
+ }
+
+ header nav div{
+     display: inline-block;
+ }
+
+ header nav a{
+     font-family: 'Redressed', cursive;
+     font-size: 25px;
+     text-decoration: none;
+     text-shadow:1px 1px  #515a5a ;
+     margin-right: 18px;
+     color:#fff;
+ }
+
+
+ .contenido{
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+section{
+    background-color: rgb(243, 237, 237);
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    margin-left: 9px;
+    color: #e22091  ;
+    text-shadow:1px 1px  #515a5a  ;
+}
+
+p{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 25px;
+}
+
+h3{
+    font-family:  cursive;
+    font-size: 40px;
+}
+
+.re{
+    margin-left: 20px;
+}
+
+article h2{
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+footer{
+    background-color:    #e22091  ;
+    box-shadow: 0 0 5px 5px #515a5a;
+    grid-column: 1/4;
+    grid-row: 5;
+    height: 90px;
+}
+
+footer p{
+    text-align: center;
+    color:white;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+
+table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 20px;
+    border-spacing: 15px;
+}
